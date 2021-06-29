@@ -32,6 +32,9 @@ Now it has included Google, StackOverflow and Baidu.
 
 Initial version of the Search In Browser.
 
+### 1.0.1
+Update the README file.
+
 -----------------------------------------------------------------------------------------------------------
 ## Contributions
 
