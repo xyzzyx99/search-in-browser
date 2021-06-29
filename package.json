@@ -1,0 +1,121 @@
+{
+  "name": "search-in-browser",
+  "displayName": "Search In Browser",
+  "description": "Search the text seleted in your browser.",
+  "keywords": [
+    "search",
+    "vscode",
+    "baidu",
+    "google",
+    "stackoverflow",
+    "zeng",
+    "browser"
+  ],
+  "version": "1.0.0",
+  "publisher": "ZengLi",
+  "engines": {
+    "vscode": "^1.57.0"
+  },
+  "icon": "media/icon.png",
+  "categories": [
+    "Other"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://www.github.com/Alex-Sol/search-in-browser"
+  },
+  "activationEvents": [
+    "onCommand:search-in-browser.google-search",
+    "onCommand:search-in-browser.stackoverflow-search",
+    "onCommand:search-in-browser.baidu-search"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "search-in-browser.google-search",
+        "title": "Google",
+        "category": "Search",
+        "icon": {
+          "dark": "./media/google_logo.svg",
+          "light": "./media/google_logo.svg"
+        }
+      },
+      {
+        "command": "search-in-browser.stackoverflow-search",
+        "title": "StackOverflow",
+        "category": "Search",
+        "icon": {
+          "dark": "./media/stackoverflow_logo.svg",
+          "light": "./media/stackoverflow_logo.svg"
+        }
+      },
+      {
+        "command": "search-in-browser.baidu-search",
+        "title": "Baidu",
+        "category": "Search",
+        "icon": {
+          "dark": "./media/baidu_logo.svg",
+          "light": "./media/baidu_logo.svg"
+        }
+      }
+    ],
+    "menus": {
+      "editor/context": [
+        {
+          "command": "search-in-browser.google-search",
+          "group": "navigation",
+          "when": "editorHasSelection"
+        },
+        {
+          "command": "search-in-browser.stackoverflow-search",
+          "group": "navigation",
+          "when": "editorHasSelection"
+        },
+        {
+          "command": "search-in-browser.baidu-search",
+          "group": "navigation",
+          "when": "editorHasSelection"
+        }
+      ],
+      "editor/title": [
+        {
+          "command": "search-in-browser.google-search",
+          "group": "navigation",
+          "when": "editorHasSelection"
+        },
+        {
+          "command": "search-in-browser.stackoverflow-search",
+          "group": "navigation",
+          "when": "editorHasSelection"
+        },
+        {
+          "command": "search-in-browser.baidu-search",
+          "group": "navigation",
+          "when": "editorHasSelection"
+        }
+      ]
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src --ext ts",
+    "test": "node ./out/test/runTest.js"
+  },
+  "devDependencies": {
+    "@types/glob": "^7.1.3",
+    "@types/mocha": "^8.2.2",
+    "@types/node": "14.x",
+    "@types/vscode": "^1.57.0",
+    "@typescript-eslint/eslint-plugin": "^4.26.0",
+    "@typescript-eslint/parser": "^4.26.0",
+    "eslint": "^7.27.0",
+    "glob": "^7.1.7",
+    "mocha": "^8.4.0",
+    "typescript": "^4.3.2",
+    "vscode-test": "^1.5.2"
+  }
+}
