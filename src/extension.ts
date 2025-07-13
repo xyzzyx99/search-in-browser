@@ -34,7 +34,23 @@ export function activate(context: vscode.ExtensionContext) {
 		vscode.commands.executeCommand('vscode.open', vscode.Uri.parse(baiduSearchUrl));
 	});
 
+	let searchWithBing = vscode.commands.registerCommand('search-in-browser.bing-search', () => {
+		vscode.window.showInformationMessage("searching with Bing...");
+		const searchText = getSelectedText();
+		const bingSearchUrl = `https://www.bing.com/search?q=${searchText}`;
+		vscode.commands.executeCommand('vscode.open', vscode.Uri.parse(bingSearchUrl));
+	});
+
+	let searchWithDuck = vscode.commands.registerCommand('search-in-browser.duck-search', () => {
+		vscode.window.showInformationMessage("searching with Duckduckgo...");
+		const searchText = getSelectedText();
+		const duckSearchUrl = `https://duckduckgo.com/?q=${searchText}`;
+		vscode.commands.executeCommand('vscode.open', vscode.Uri.parse(duckSearchUrl));
+	});
+
 	context.subscriptions.push(searchWithGoogle);
+	context.subscriptions.push(searchWithBing);
+	context.subscriptions.push(searchWithDuck);
 	context.subscriptions.push(searchWithStackOverflow);
 	context.subscriptions.push(searchWithBaidu);
 }

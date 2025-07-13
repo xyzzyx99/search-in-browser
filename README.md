@@ -4,7 +4,7 @@
 
 With this extension, you could simply select your code, then right click or click the icon in the upper right corner to search it in your local browser.
 
-[![Current version of Search In Browser](https://vsmarketplacebadge.apphb.com/version-short/ZengLi.search-in-browser.svg)](https://marketplace.visualstudio.com/items?itemName=ZengLi.search-in-browser) [![Downloads](https://vsmarketplacebadge.apphb.com/downloads/ZengLi.search-in-browser.svg)](https://marketplace.visualstudio.com/items?itemName=ZengLi.search-in-browser) [![Rating](https://vsmarketplacebadge.apphb.com/rating-short/ZengLi.search-in-browser.svg)](https://marketplace.visualstudio.com/items?itemName=ZengLi.search-in-browser)
+[[Current version of Search In Browser]](https://marketplace.visualstudio.com/items?itemName=ZengLi.search-in-browser) [[Downloads]](https://marketplace.visualstudio.com/items?itemName=ZengLi.search-in-browser) [[Rating]](https://marketplace.visualstudio.com/items?itemName=ZengLi.search-in-browser)
 
 <a href="https://marketplace.visualstudio.com/items?itemName=ZengLi.search-in-browser" style="color:#ddd;font-size:10pt;background:#333;padding:10px 14px;border:1px solid #000;">Visit Marketplace</a>
 
