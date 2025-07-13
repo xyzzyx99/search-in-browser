@@ -35,7 +35,7 @@ Initial version of the Search In Browser.
 ### 1.0.1
 Update the README file.
 
-### 1.0.1
+### 1.0.2
 Added Bing, Duckduckgo
 
 -----------------------------------------------------------------------------------------------------------
