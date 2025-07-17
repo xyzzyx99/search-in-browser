@@ -83,27 +83,27 @@
         {
           "command": "search-in-browser.google-search",
           "group": "navigation",
-          "when": "editorHasSelection"
+          "when": "editorHasSelection && config.searchInBrowser.showContextMenu"
         },
         {
           "command": "search-in-browser.bing-search",
           "group": "navigation",
-          "when": "editorHasSelection"
+          "when": "editorHasSelection && config.searchInBrowser.showContextMenu"
         },
         {
           "command": "search-in-browser.duck-search",
           "group": "navigation",
-          "when": "editorHasSelection"
+          "when": "editorHasSelection && config.searchInBrowser.showContextMenu"
         },
         {
           "command": "search-in-browser.stackoverflow-search",
           "group": "navigation",
-          "when": "editorHasSelection"
+          "when": "editorHasSelection && config.searchInBrowser.showContextMenu"
         },
         {
           "command": "search-in-browser.baidu-search",
           "group": "navigation",
-          "when": "editorHasSelection"
+          "when": "editorHasSelection && config.searchInBrowser.showContextMenu"
         }
       ],
       "editor/title": [
@@ -133,6 +133,16 @@
           "when": "editorHasSelection"
         }
       ]
+    },
+    "configuration": {
+      "title": "Search In Browser",
+      "properties": {
+        "searchInBrowser.showContextMenu": {
+          "type": "boolean",
+          "default": false,
+          "description": "Show Search Engines in Context Menu."
+        }
+      }
     }
   },
   "scripts": {
